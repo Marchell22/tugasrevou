@@ -1,0 +1,50 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="profilRevou.css" />
+  <title>Halaman Awal</title>
+</head>
+
+<body>
+  <navbar class="container">
+    <div class="logo">
+      <img id="logo-revoU" src="revou.png" alt="Logo" />
+    </div>
+    <div class="button-navbar">
+      <a href="index.html"><button class="button-home">Home</button></a>
+      <a href="myProfile.html"><button class="button-myProfile">My Profile</button></a>
+      <!-- <a href="profileRevou.html"><button class="button-portofolio">Portofolio</button></a> -->
+      <a href="messageRevou.html"><button class="button-messageUs">Message Us</button></a>
+    </div>
+  </navbar>
+
+  <section class="title">
+    <div class="title-text">
+      <h1 class="formBelajar">Hallo <span id="nama"></span> , Selamat Datang di Website Ini</h1>
+      <p>Website Latihan Revou</p>
+      <img src="Nico Robin Wallpaper HD.jpg" alt="RobinChan" width="100%" height="100%" title="Nico Robin">
+    </div>
+  </section>
+  <script>
+    var name = prompt("Masukan Nama Kamu");
+    document.getElementById("nama").innerText = name;
+  </script>
+  <br><br>
+  <h1 class="text-ourHeadquarter">Our Headquarter</h1>
+  <figure class="image-headquarter-group">
+    <div class="image-headquarter-location-group">
+      <img class="image-headquarter" src="Monas.jpg" alt="Monas" />
+      <p class="text-headquarterLocation">Jakarta</p>
+    </div>
+    <div class="image-headquarter-location-group">
+      <img class="image-headquarter" src="Bandung.jpg" alt="Gedung Sate" />
+      <p class="text-headquarterLocation">Bandung</p>
+    </div>
+    <div class="image-headquarter-location-group">
+      <img class="image-headquarter" src="Surabaya.jpg" alt="Patung Suro dan Boyo" />
+      <p class="text-headquarterLocation">Surabaya</p>
+    </div>
+  </figure>
+</body>
+
+</html>

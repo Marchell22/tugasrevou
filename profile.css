@@ -1,0 +1,77 @@
+/* body {
+    background-color: aqua;
+} */
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 20%;
+    margin-top: 20px;
+}
+
+.profile {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50px;
+    border: 2px solid #111
+}
+
+.profil {
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+#logo-revoU {
+    height: 50px;
+}
+
+.logo {
+    display: flex;
+}
+
+.button-navbar {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #000000;
+    padding: 10px 30px;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+button {
+    padding: 5px 20px;
+    background-color: #fff;
+    border-width: 1px;
+    width: 120px;
+    height: 60%;
+}
+
+.button-home {
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.button-messageUs {
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.button-myProfile {
+    border-left: none;
+}
+
+.button-portofolio {
+    border-right: none;
+    border-left: none;
+}

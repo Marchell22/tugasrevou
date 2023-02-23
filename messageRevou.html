@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Message Us</title>
+    <link rel="stylesheet" href="messageRevou.css">
+</head>
+
+<body>
+    <navbar class="container">
+        <div class="logo">
+            <img id="logo-revoU" src="revou.png" alt="Logo">
+        </div>
+        <div class="button-navbar">
+            <a href="index.html"><button class="button-home">Home</button></a>
+            <a href="myProfile.html"><button class="button-myProfile">My Profile</button></a>
+            <!-- <a href="profileRevou.html"><button class="button-portofolio">Portofolio</button></a> -->
+            <a href="messageRevou.html"><button class="button-messageUs">Message Us</button></a>
+        </div>
+    </navbar>
+    <section>
+        <h2 class="message">Message Us</h2><br>
+        <form name="form" onsubmit="return tampilkanData()">
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td width="50%">
+                            <table class="table1">
+                                <tr>
+                                    <td>Nama</td>
+                                    <td>:</td>
+                                    <td><input type="text" placeholder="Nama Lengkap" name="nama"></td>
+                                </tr>
+                                <tr>
+                                    <td>Tanggal Lahir</td>
+                                    <td>:</td>
+                                    <td><input type="date" name="date"></td>
+                                </tr>
+                                <tr>
+                                    <td>Jenis Kelamin</td>
+                                    <td>:</td>
+                                    <td><input type="radio" name="gender" value="Laki-laki">
+                                        <label class="label-radioOption" for="">Laki-laki</label>
+                                        <input type="radio" name="gender" value="Perempuan">
+                                        <label class="label-radioOption" for="">Perempuan</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Pesan</td>
+                                    <td>:</td>
+                                    <td><input type="text" name="pesan" class="pesan"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="Submit" id="button" value="submit" class="submit"
+                                            onclick="tampilkanData()"></input></td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td width="50%">
+                            <table class="table2" id="tabel">
+                                <tbody class=" table2data">
+                                    <tr>
+                                        <td>Nama</td>
+                                        <td>:</td>
+                                        <td><span id="sender-full-name"></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tanggal Lahir</td>
+                                        <td>:</td>
+                                        <td><span id="sender-birth-date"></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jenis Kelamin</td>
+                                        <td>:</td>
+                                        <td><span id="sender-gender"></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pesan</td>
+                                        <td>:</td>
+                                        <td><span id="sender-message"></span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </section>
+    <script>
+        function tampilkanData() {
+            var name = document.forms["form"]["nama"].value;
+            var tanggal = document.forms["form"]["date"].value;
+            var jk = document.forms["form"]["gender"].value;
+            var pesan = document.forms["form"]["pesan"].value;
+
+            if (name == "" || tanggal == "" || jk == "" || pesan == "") {
+                alert("input tidak boleh kosong");
+                return false;
+            }
+
+            document.getElementById("sender-full-name").innerText = name;
+            document.getElementById("sender-birth-date").innerText = tanggal;
+            document.getElementById("sender-gender").innerText = jk;
+            document.getElementById("sender-message").innerText = pesan;
+            return false;
+        }
+    </script>
+</body>
+
+</html>

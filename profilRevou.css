@@ -1,0 +1,90 @@
+/* .container {
+  display: flex;
+  border: 5px solid yellow;
+  background-color: #303067;
+}
+.button-navbar {
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  background-color: #ff0202;
+} */
+/* body{
+  background-color: aqua;
+} */
+#logo-revoU {
+  height: 50px;
+}
+
+.logo {
+  display: flex;
+}
+
+.button-navbar {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #000000;
+  padding: 10px 30px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+button {
+  padding: 5px 20px;
+  background-color: #fff;
+  border-width: 1px;
+  width: 120px;
+  height: 60%;
+}
+
+.button-home {
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.button-messageUs {
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.button-myProfile {
+  border-left: none;
+}
+
+.button-portofolio {
+  border-right: none;
+  border-left: none;
+}
+
+.title-text {
+  margin: 40px 50px;
+}
+
+.formBelajar {
+  margin-bottom: 10px;
+}
+
+.image-headquarter-group {
+  display: flex;
+  margin: 50px;
+}
+
+.image-headquarter {
+  height: 100px;
+  margin: 0 40px;
+  border-radius: 50px;
+}
+
+.text-headquarterLocation {
+  justify-content: center;
+  display: flex;
+  margin-top: 10px;
+}

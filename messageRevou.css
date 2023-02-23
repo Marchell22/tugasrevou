@@ -1,0 +1,108 @@
+ /* body {
+     background-color: aqua;
+ } */
+
+ input {
+     margin-left: 30px;
+     box-sizing: border-box;
+     border: 2px solid #ccc;
+     border-radius: 4px;
+     background-color: #ffff;
+     font-size: 16px;
+ }
+
+
+ .pesan {
+     padding: 30px;
+     box-sizing: border-box;
+     border: 2px solid #ccc;
+     border-radius: 4px;
+     background-color: #fff;
+     font-size: 16px;
+ }
+
+ #logo-revoU {
+     height: 50px;
+ }
+
+ .logo {
+     display: flex;
+ }
+
+ .button-navbar {
+     display: flex;
+     align-items: center;
+ }
+
+ .container {
+     display: flex;
+     justify-content: space-between;
+     border-bottom: 2px solid #000000;
+     padding: 10px 30px;
+ }
+
+ * {
+     margin: 0px;
+     padding: 0px;
+ }
+
+ .table2 {
+     border: 1px solid #111;
+     text-align: left;
+     justify-content: start;
+     padding-right: 50%;
+     padding-top: 10%;
+     padding-bottom: 10%;
+     padding-left: 10px;
+     border-radius: 10px;
+ }
+
+ .table2data {
+     text-align: left;
+ }
+
+ .submit {
+     width: 100%;
+     margin-left: 100px;
+     margin-top: 30px;
+     padding: 10px;
+     border-radius: 10px;
+     border: 2px solid #111;
+ }
+
+ button {
+     padding: 5px 20px;
+     background-color: #fff;
+     border-width: 1px;
+     width: 120px;
+     height: 60%;
+ }
+
+
+ .button-home {
+     border-top-left-radius: 4px;
+     border-bottom-left-radius: 2px;
+ }
+
+ .button-messageUs {
+     border-top-right-radius: 2px;
+     border-bottom-right-radius: 2px;
+ }
+
+ .button-myProfile {
+     border-left: none;
+ }
+
+ .button-portofolio {
+     border-right: none;
+     border-left: none;
+ }
+
+ .message {
+     font-size: 32px;
+     margin-top: 20px;
+ }
+
+ a {
+     color: #fff;
+ }
